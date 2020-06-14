@@ -16,7 +16,7 @@ function getAverageMark(marks){
     if (marks.length == 0) {
       return 0;
     } else if (marks.length > 5) {
-        marks.splice(5, 1);
+        marks.splice(5);
         console.log("Количество введённых оценок превышает допустимое значение");
     } for (let i = 0; i < marks.length; i++) {
         sum += marks[i];
